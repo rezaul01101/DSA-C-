@@ -34,8 +34,11 @@ int main()
 {
 
     int even[6] = {2, 4, 6, 8, 12, 18};
-    int odd[5] = {3, 8, 11, 14, 16};
-    int findKey=6;
-    int evenIndex =binarySearch(even,6,findKey);
-    cout << "Index of "<<findKey <<" is "<<evenIndex <<endl;
+    int odd[5] = {3, 8, 11, 13, 19};
+    int evenFindKey=6;
+    int oddFindKey=13;
+    int evenIndex =binarySearch(even,6,evenFindKey);
+    int oddIndex =binarySearch(odd,5,oddFindKey);
+    cout << "Even Index of "<<evenFindKey <<" is "<<evenIndex <<endl;
+    cout << "Odd Index of "<<oddFindKey <<" is "<<oddFindKey <<endl;
 }
